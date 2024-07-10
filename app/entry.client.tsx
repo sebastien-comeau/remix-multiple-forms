@@ -4,9 +4,11 @@
  * For more information, see https://remix.run/file-conventions/entry.client
  */
 
-import { RemixBrowser } from "@remix-run/react";
-import { startTransition, StrictMode } from "react";
-import { hydrateRoot } from "react-dom/client";
+import { RemixBrowser } from '@remix-run/react';
+import { startTransition, StrictMode } from 'react';
+import { hydrateRoot } from 'react-dom/client';
+// import 'formdata-submitter-polyfill';
+import 'event-submitter-polyfill';
 
 startTransition(() => {
   hydrateRoot(
